@@ -18,10 +18,14 @@ import { AdminModule } from './admin/admin.module';
 import { AuthModule } from './auth/auth.module';
 import { JwtHelper } from 'angular2-jwt';
 import { ToSexNamePipe } from './to-sex-name.pipe';
+import { YellowTextDirective } from './yellow-text.directive';
+import { UserTypeComponent } from './directives/user-type/user-type.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    YellowTextDirective,
+    UserTypeComponent,
   ],
   imports: [
     BrowserModule,

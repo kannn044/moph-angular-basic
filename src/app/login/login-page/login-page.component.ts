@@ -21,6 +21,7 @@ export class LoginPageComponent implements OnInit {
 
   async doLogin() {
     let rs = await this.basicService.doLogin(this.username, this.password);
+    
     if(rs.ok) {
       sessionStorage.setItem('token', rs.token);
       this.router.navigate(['/admin'])
