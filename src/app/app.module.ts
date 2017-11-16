@@ -19,14 +19,10 @@ import { AuthModule } from './auth/auth.module';
 import { JwtHelper } from 'angular2-jwt';
 import { ToSexNamePipe } from './to-sex-name.pipe';
 import { ToThaiDatePipe } from './to-thai-date.pipe';
-import { YellowTextDirective } from './admin/yellow-text.directive';
-import { UserTypeComponent } from './directives/user-type/user-type.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    YellowTextDirective,
-    UserTypeComponent,
   ],
   imports: [
     BrowserModule,
